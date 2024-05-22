@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
-    --cor-primaria: #000000;
+    --cor-primaria: #19191B;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #FF577F;
+    --cor-footer: #B9B9B9;
     --cor-hover: #272727;
 
     --fonte-primaria: 'Do Hyeon', sans-serif;
@@ -27,11 +28,11 @@ body {
 }
 
 .apresentacao {
-    padding: 5% 15%;
+    padding: 5% 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 82px;
+    gap: 80px;
 }
 
 .apresentacao_conteudo {
@@ -64,7 +65,7 @@ body {
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
-    width: 50%;
+    width: 70%;
     text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
@@ -87,20 +88,41 @@ body {
 
 .apresentacao_imagem {
     width: 50%;
+    padding: 0% 0% 0% 15%;
+    border-radius: 8px;
 }
 
 .rodape {
+    border-top: 1px solid var(--cor-terciaria);
     padding: 28px;
-    color: #000;
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+}
+
+.rodape_conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
     text-align: center;
+    align-items: center;
+}
+
+.rodape_conteudo_logo {
+    width: 40%;
+}
+
+.rodape_conteudo_titulo {
+    color: var(--cor-footer);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    text-align: center;
+    font-size: 16px;
     font-weight: 400;
 }
 
 .cabecalho {
-    padding: 4% 0% 0% 15%;
+    padding: 4% 0% 0% 0%;
 }
 
 .cabecalho_menu {
