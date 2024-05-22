@@ -147,12 +147,14 @@ body {
         justify-content: center;
     }
 
-    .apresentacao {
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
 
     .apresentacao_conteudo {
         width: auto;
+    }
+
+    .apresentacao_imagem {
+        flex-direction: column;
+        width: auto;
+        gap: 40px;
     }
 }
