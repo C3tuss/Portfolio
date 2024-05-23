@@ -8,3 +8,21 @@ function menuShow() {
         document.querySelector(`.icon`).src = "assets/close_white_36dp.svg";
     }
 }
+
+let texto = document.querySelector(`.apresentacao_conteudo_texto`).textContent;
+let textoElemento = document.querySelector(`.apresentacao_conteudo_texto`);
+let atraso = 50;
+
+let contador = 0;
+document.querySelector(`.apresentacao_conteudo_texto`).textContent = ``
+
+function escreverTexto(){
+    if(contador < texto.length){
+        textoElemento.textContent += texto.charAt(contador);
+        contador ++;
+        setTimeout(escreverTexto, atraso);
+
+    }
+}
+
+escreverTexto();
