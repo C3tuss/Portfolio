@@ -122,7 +122,13 @@ body {
 }
 
 .cabecalho {
-    padding: 4% 0% 0% 0%;
+    padding: 2% 0% 0% 0%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    padding: 1.rem 6rem;
 }
 
 .cabecalho_menu {
@@ -168,14 +174,45 @@ body {
     transform: scaleX(1);
 }
 
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
 @media (max-width: 1200px) {
 
-    .cabecalho {
-        padding: 6%;
+    .nav-bar{
+        padding: 1.5rem 4rem;
+        justify-content: space-between;
     }
-    
+
     .cabecalho_menu {
-        justify-content: center;
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .cabecalho_menu_link {
+        display: block;
+        padding-top: 1.2rem;
     }
 
     .apresentacao {
@@ -191,5 +228,9 @@ body {
     .apresentacao_imagem {
         width: 90%;
         justify-items: center;
+    }
+
+    .open {
+        display: block;
     }
 }

@@ -9,22 +9,47 @@
 </head>
 <body>
     <header class="cabecalho">
-        <nav class="cabecalho_menu">
-            <a class="cabecalho_menu_link" href="index.html">
-                <Img src="assets/Logohome.png"></Img>
-                Home
-            </a>
-            <a class="cabecalho_menu_link" href="habilidades.html">
-                <Img src="assets/Logohabilidades.png"></Img>
-                Habilidades
+        <nav class="nav-bar">
+            <div class="cabecalho_menu">
+                <a class="cabecalho_menu_link" href="index.html">
+                    <Img src="assets/Logohome.png"></Img>
+                    Home
+                </a>
+                <a class="cabecalho_menu_link" href="habilidades.html">
+                    <Img src="assets/Logohabilidades.png"></Img>
+                    Habilidades
+    
+                </a>
+                <a class="cabecalho_menu_link" href="projetos.html">
+                    <Img src="assets/Logoprojetos.png"></Img>
+                    Projetos
+    
+                </a>
 
-            </a>
-            <a class="cabecalho_menu_link" href="projetos.html">
-                <Img src="assets/Logoprojetos.png"></Img>
-                Projetos
-
-            </a>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/menu_white_36dp.svg" alt=""></button>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <a class="cabecalho_menu_link" href="index.html">
+                    <Img src="assets/Logohome.png"></Img>
+                    Home
+                </a>
+                <a class="cabecalho_menu_link" href="habilidades.html">
+                    <Img src="assets/Logohabilidades.png"></Img>
+                    Habilidades
+    
+                </a>
+                <a class="cabecalho_menu_link" href="projetos.html">
+                    <Img src="assets/Logoprojetos.png"></Img>
+                    Projetos
+    
+                </a>
+
+            </ul>
+        </div>
     </header>
     <main class="apresentacao">
         <section class="apresentacao_conteudo">
@@ -49,5 +74,6 @@
             <p class="rodape_conteudo_titulo">Desenvolvido por Alexandre Vilela</p>
         </section>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
